@@ -6,16 +6,29 @@ h2 {
   font-family: "Fira Sans", sans-serif;
   color: #DCF2B0;
   text-shadow: 3px 3px 0px #59C3C3;
+
+  animation-name: scaleIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.2);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 
-
-
-
-
-
-
-
+/* 2 Schritte
+      1. Animation mit Keyframes (@keyframes) erstellen
+      2. Animation dem Element zuweisen
+ */
 
 
 .wrap {
