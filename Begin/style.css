@@ -1,10 +1,19 @@
+@keyframes move{
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(820px);
+  }
+}
+
 
 .cloud01 {
-
+  animation: move 25s linear infinite;
 }
 
 .cloud02 {
-  
+  animation: move 30s 5s linear infinite backwards;
 }
 
 
