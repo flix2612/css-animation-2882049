@@ -9,9 +9,19 @@ h1 {
   border-right: .15em solid #CE2D4F; 
   white-space: nowrap; 
   margin: 0 auto; 
-  letter-spacing: .15em; 
+  letter-spacing: .15em;
+
+  animation: typing 3s steps(14), blinking 0.75s steps(1) infinite;
 }
 
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 @keyframes blinking {
   0%, 100% {
